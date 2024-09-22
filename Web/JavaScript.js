@@ -3,7 +3,7 @@
         $.post('api.aspx', { action: 'get_status' }, function (data) {
             var json = JSON.parse(data);
             json.forEach(function (room) {
-                var roomElement = $('#maphong' + room.ma_phonghoc);
+                var roomElement = $('#phong' + room.ma_phong);
                 if (roomElement.length) {
                     roomElement.removeClass('dangsua danghoc khonghoc');
                     switch (room.trang_thai) {
