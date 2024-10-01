@@ -3,19 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phòng Học </title>
+    <title>Phòng Học</title>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
-    <script src="js/jquery-ui.js"></script>
     <script src="JavaScript.js"></script>
     <link href="StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
     <div class="login">
-        <input class="user" />
-        <input class="pass" />
+        <input class="user" placeholder="Nhập tên đăng nhập" />
+        <input class="pass" type="password" placeholder="Nhập mật khẩu" />
         <h2>Nhập CAPTCHA</h2>
-        <img id="captchaImage" src="api.aspx?action=captcha" alt="CAPTCHA" />
+        <img id="captchaImage" src="api.aspx?action=capcha&" alt="CAPTCHA" />
         <br />
         <input type="text" id="txtCaptcha" placeholder="Nhập mã CAPTCHA" />
         <button id="btnReloadCaptcha" type="button">Tải lại CAPTCHA</button>
@@ -23,19 +22,16 @@
     </div>
     <div class="Toa">
         <h1>Hiển thị tòa nhà</h1>
-
         <div class="day">
             <div class="phong" id="phong1">Phòng 1</div>
             <div class="phong" id="phong2">Phòng 2</div>
             <div class="phong" id="phong3">Phòng 3</div>
         </div>
-
         <div class="day">
             <div class="phong" id="phong4">Phòng 4</div>
             <div class="phong" id="phong5">Phòng 5</div>
             <div class="phong" id="phong6">Phòng 6</div>
         </div>
-
     </div>
 </body>
 </html>
