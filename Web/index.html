@@ -11,6 +11,16 @@
     <link href="StyleSheet.css" rel="stylesheet" />
 </head>
 <body>
+    <div class="login">
+        <input class="user" />
+        <input class="pass" />
+        <h2>Nhập CAPTCHA</h2>
+        <img id="captchaImage" src="api.aspx?action=captcha" alt="CAPTCHA" />
+        <br />
+        <input type="text" id="txtCaptcha" placeholder="Nhập mã CAPTCHA" />
+        <button id="btnReloadCaptcha" type="button">Tải lại CAPTCHA</button>
+        <button id="btnSubmit" type="submit">Xác nhận</button>
+    </div>
     <div class="Toa">
         <h1>Hiển thị tòa nhà</h1>
 
